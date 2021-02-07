@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+}
+
+.temp{
+    color: white;
+    font-size: 40px;
+}
+
+.temp p{
+    transition: font-size 1s;
+}
+
+.temp p:hover{
+    font-size: 80px;
+}
