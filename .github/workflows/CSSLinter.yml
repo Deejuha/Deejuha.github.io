@@ -22,4 +22,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: CSS Linter analysis
         run: |
-          csslint $GITHUB_WORKSPACE/css
+          csslint $GITHUB_WORKSPACE/css/main.ccs
+          csslint $GITHUB_WORKSPACE/css/small.ccs
+          csslint $GITHUB_WORKSPACE/css/medium.ccs
+          csslint $GITHUB_WORKSPACE/css/large.ccs
