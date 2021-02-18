@@ -4,19 +4,38 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #333;
 }
 
-.temp{
-    color: white;
-    font-size: 40px;
+/* Navigation */
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+    line-height: 60px;
+    background-color: rgb(194, 192, 192);
+    text-align: center;
 }
 
-.temp p{
-    transition: font-size 1s;
+.nav-mobile{
+    margin-right: 100%;
+    background-color: tomato;
 }
 
-.temp p:hover{
-    font-size: 80px;
+.nav-mobile button{
+    padding: 0 30px;
+    line-height: 60px;
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+
+.nav-desktop{
+    display: none;
 }
