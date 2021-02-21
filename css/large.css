@@ -1,1 +1,7 @@
 /* @media (min-width: 992px) { ... } */
+
+/* HEADER */
+.header-img
+{
+    background-image: url("/img/header_large.png");
+}

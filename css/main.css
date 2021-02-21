@@ -1,11 +1,11 @@
 /* Base reset */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Colors */
+/* COLORS */
 :root {
     --light-gray: #6B6E70;
     --dark-gray: #474B4F;
@@ -15,16 +15,16 @@
     --white: #F2F2F2;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--black);
 }
 
-/* Navigation */
-nav{
+/* NAVIGATION */
+nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -32,10 +32,108 @@ nav{
     text-align: center;
 }
 
-.nav-mobile{
+.nav-mobile {
     display: block;
 }
 
-.nav-desktop{
+.nav-desktop {
     display: none;
+}
+
+/* HEADER */
+.header-img {
+    position: relative;
+    height: 360px;
+    z-index: -1;
+    background-image: url(/img/header_small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* for 4k display */
+}
+
+.header-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: var(--dark-gray);
+    opacity: 85%;
+}
+
+.header-photo {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    background-image: url(/img/header_photo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-text {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 260px;
+    left: 50%;
+    color: var(--white);
+    text-align: center;
+    text-shadow: 3px 3px 5px black;
+    z-index: 1;
+}
+
+.header-text h1 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+.header-text p {
+    font-size: 1.1rem;
+}
+
+.header-text span {
+    color: var(--light-green)
+}
+
+/* MAIN */
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main section{
+    text-align: center;
+}
+
+main section h2{
+    font-size: 2.2rem;  
+    color: var(--green);
+}
+
+main section p{
+    font-size: 1.4rem;
+    color: var(--white);
+}
+
+/* FOOTER */
+footer div{
+    width: 100%;
+    height: 30px;
+    /* position: absolute; */
+    /* bottom: 0%; */
+
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--dark-gray);
+}
+
+footer div p{
+    color: var(--white);
+    font-size: 1.2rem;
 }
