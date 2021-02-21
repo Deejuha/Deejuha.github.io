@@ -7,6 +7,10 @@
 
 .nav-desktop{
     display: block;
+    background-color: var(--bloom-white);
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
 .nav-desktop li{
@@ -19,10 +23,10 @@
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: var(--bloom-black);
     transition: color 0.3s;
 }
 
 .nav-desktop li a:hover{
-    color: tomato;
+    color: var(--bloom-)
 }
